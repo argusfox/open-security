@@ -1,0 +1,28 @@
+server: 
+  port: 8976
+spring:
+  datasource:
+    druid:
+#      url: jdbc:mysql://118.25.8.158:3306/web_data?characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false&autoReconnect=true
+#      username: root
+#      password: eq23wrf@?1rtAS12
+#      filters: log4j
+      url: jdbc:mysql://192.168.100.57:3307/gsgj_test?characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false&autoReconnect=true
+      username: root
+      password: 123456
+      filters: log4j
+  redis:
+    database: 0
+    host: 118.25.8.158
+    port: 6379
+    password: eq23wrf@?1rtAS12
+    timeout: 0
+    pool:
+      max-active: 1000
+      max-wait: -1
+      max-idle: 100
+      min-idle: 1
+  data:
+    mongodb:
+      uri: mongodb://118.25.8.158:27017/admin
+##      uri: mongodb://root:123456@118.25.8.158:27017/admin
